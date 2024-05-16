@@ -1,0 +1,88 @@
+/*estilo do cabeçalho*/
+header {
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    background-color: #83056e
+ }
+ /*estilo do menu de navegação*/
+ nav {
+    text-align: center;
+    word-spacing: 30px;
+    Padding: 10px;
+    background-color: #e7d741
+ }
+ /*criando o layout de duas colunas*/
+ *{
+    box-sizing: border-box;
+ }
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .post-text-box {
+    flex: 70%;
+    padding: 20px;
+    background-color: #e9e0e9
+}
+.profile img {
+   width: 300px;
+   display: block;
+   margin-left: auto; /* Mudei para auto para alinhar à direita */
+   margin-right: 30px; /* Ajustei o margin-right para espaçamento */
+   padding: 10px;
+}
+.profile {
+   flex: 30%; /* Alterado para 30% para acomodar a imagem */
+   padding: 20px;
+   text-align: right; /* Adicionado para alinhar à direita */
+}
+.profile h1 {
+   text-align: right;
+   font-size: 36px;
+   margin-left: auto;
+   margin-right: 5%;
+}
+.profile p {
+   font-size: 22px;
+   text-align: left;
+   word-wrap: break-word;
+   max-width: 300px; /* Ajuste conforme desejado */
+   margin-left: auto; /* Centraliza o conteúdo */
+   margin-right: 2%;
+}
+.informatica {
+   flex: 30%; /* Alterado para 30% para acomodar a imagem */
+   padding: 20px;
+   text-align: right; /* Adicionado para alinhar à direita */
+   margin-top: -400px; /* Ajuste conforme desejado */
+}
+.informatica h1{
+   font-size: 22px;
+   text-align: left;
+   word-wrap: break-word;
+   max-width: 300px; /* Ajuste conforme desejado */
+   margin-right: auto; /* Centraliza o conteúdo */
+   margin-right: 2%;
+}
+.informatica img {
+   width: 700px;
+   display: block;
+   margin-left: 400px; /* Mudei para auto para alinhar à direita */
+   margin-left: 400px; /* Ajustei o margin-right para espaçamento */
+   padding: 10px;
+   margin-top: -300px; /* Ajuste conforme desejado */
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 300px; /* Ajuste conforme desejado */
+}
+/*estilo do botão da barra de navegação*/
+nav a {
+   color: #610885a9;
+   text-decoration: none;
+   font-size: larger;
+}
