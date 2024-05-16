@@ -1,38 +1,55 @@
-header, nav, .post-text-box, .profile, .informatica, footer {
-    padding: 20px;
-    text-align: center;
-}
-
+/* Estilo do cabeçalho */
 header {
-    background-color: #83056e;
+    text-align: center;
     color: aliceblue;
+    padding: 20px;
+    background-color: #83056e;
 }
 
+/* Estilo do menu de navegação */
 nav {
+    text-align: center;
+    word-spacing: 30px;
+    padding: 10px;
     background-color: #e7d741;
 }
 
+/* Layout de duas colunas */
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.post-text-box, .profile, .informatica {
-    flex: 1;
-    max-width: 400px;
+.post-text-box {
+    flex: 70%;
+    padding: 20px;
+    background-color: #e9e0e9;
 }
 
-.profile img, .informatica img {
-    max-width: 100%;
+.profile {
+    flex: 30%;
+    padding: 20px;
+    text-align: right;
 }
 
+.profile-img img {
+    width: 100%;
+    padding: 10px;
+}
+
+.informatica {
+    flex: 30%;
+    padding: 20px;
+    text-align: right;
+}
+
+.informatica-img img {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Estilo do rodapé */
 footer {
-    margin-top: 20px;
-}
-
-nav a {
-    color: #610885a9;
-    text-decoration: none;
-    font-size: larger;
+    text-align: center;
+    padding: 20px;
 }
