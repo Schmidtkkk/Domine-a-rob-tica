@@ -10,7 +10,7 @@ header {
 nav {
     text-align: center;
     word-spacing: 30px;
-    padding: 10px; /* Corrigido 'Padding' para 'padding' */
+    padding: 10px;
     background-color: #e7d741;
 }
 
@@ -22,21 +22,21 @@ nav {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px; /* Ajuste para espaçamento */
+    margin: 0 -10px; /* Ajuste para espaçamento entre colunas */
 }
 
 .post-text-box {
     flex: 70%;
     padding: 20px;
     background-color: #e9e0e9;
-    margin: 10px; /* Adicionado para espaçamento */
+    margin: 10px 0; /* Adicionado para espaçamento vertical */
 }
 
 .profile {
     flex: 30%;
     padding: 20px;
     text-align: right;
-    margin: 10px; /* Adicionado para espaçamento */
+    margin: 10px 0; /* Adicionado para espaçamento vertical */
 }
 
 .profile img {
@@ -50,7 +50,7 @@ nav {
 .profile h1 {
     text-align: right;
     font-size: 36px;
-    margin: 10px auto;
+    margin: 10px 0; /* Ajustado para espaçamento */
 }
 
 .profile p {
@@ -58,14 +58,14 @@ nav {
     text-align: left;
     word-wrap: break-word;
     max-width: 300px;
-    margin: 10px auto;
+    margin: 10px auto; /* Ajustado para espaçamento */
 }
 
 .informatica {
-    flex: 30%;
+    flex: 100%;
     padding: 20px;
     text-align: right;
-    margin: 10px; /* Adicionado para espaçamento */
+    margin: 10px 0; /* Adicionado para espaçamento vertical */
 }
 
 .informatica h1 {
@@ -73,7 +73,7 @@ nav {
     text-align: left;
     word-wrap: break-word;
     max-width: 300px;
-    margin: 10px auto;
+    margin: 10px auto; /* Ajustado para espaçamento */
 }
 
 .informatica img {
