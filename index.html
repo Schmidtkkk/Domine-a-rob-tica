@@ -5,6 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domine a robótica</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos para o menu responsivo */
+        .cart-menu {
+            display: none; /* Oculta o menu do carrinho por padrão */
+            position: fixed; /* Permite que o menu do carrinho fique fixo na tela */
+            top: 0; /* Define a posição superior para o topo da tela */
+            right: 0; /* Define a posição direita para o canto superior direito da tela */
+            background-color: #f4f4f4; /* Cor de fundo do menu do carrinho */
+            padding: 20px; /* Espaçamento interno */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra */
+            z-index: 1000; /* Z-index para garantir que o menu do carrinho esteja na frente de outros elementos */
+            max-width: 600px; /* Largura máxima do menu do carrinho */
+            height: auto; /* Altura automática */
+        }
+
+        .cart-logo {
+            margin-bottom: 10px; /* Espaçamento inferior */
+        }
+
+        .cart-products {
+            font-weight: bold; /* Texto em negrito */
+            color: #333; /* Cor do texto */
+            margin-bottom: 10px; /* Espaçamento inferior */
+        }
+
+        .cart-menu ul {
+            list-style-type: none; /* Remove os marcadores de lista */
+            padding: 0; /* Remove o preenchimento padrão */
+            margin: 0; /* Remove as margens padrão */
+        }
+
+        .cart-menu ul li {
+            margin-bottom: 10px; /* Espaçamento inferior entre os itens */
+        }
+
+        .cart-menu ul li a {
+            text-decoration: none; /* Remove a decoração de texto */
+            color: #333; /* Cor do texto */
+        }
+
+        .cart-menu button {
+            background-color: #83056e; /* Cor de fundo do botão */
+            color: #fff; /* Cor do texto do botão */
+            border: none; /* Remove a borda do botão */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            cursor: pointer; /* Altera o cursor para um ponteiro ao passar por cima */
+            display: block; /* Exibe o botão como um bloco */
+            margin-top: 20px; /* Espaçamento acima do botão */
+            margin-left: auto; /* Alinha o botão à direita */
+            margin-right: auto; /* Alinha o botão à esquerda */
+        }
+    </style>
 </head> 
 <body>
     <img src="img/logo.png" alt="Logo" width="5%" height="10%">
@@ -13,7 +65,7 @@
         <nav>
             <a href="dominio.tld/home">Início</a>
             <a href="dominio.tld/blog">Comprados</a>
-            <a href="dominio.tld/sobre">Carrinho</a>
+            <a href="javascript:void(0)" onclick="openCartMenu()">Carrinho</a>
         </nav>
     </header>
     <main>
@@ -56,5 +108,30 @@
         <a href="https://www.facebook.com/institutoforjariobonito/" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/__kaua_henrique__/?next=%3F%2F" target="_blank">Instagram</a>
     </footer>
+    <div class="cart-menu" id="cartMenu">
+        <div class="cart-logo">
+            <img src="img/carrinho-logo.png" alt="Carrinho de Compras" width="50" height="50">
+        </div>
+        <div class="cart-products">Produtos</div>
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+        <button onclick="closeCartMenu()">Fechar</button>
+    </div>
+    <script>
+      // Função para alternar a visibilidade do menu do carrinho
+      function openCartMenu() {
+          var cartMenu = document.getElementById('cartMenu');
+          cartMenu.style.display = 'block';
+      }
+
+      // Função para fechar o menu do carrinho
+      function closeCartMenu() {
+          var cartMenu = document.getElementById('cartMenu');
+          cartMenu.style.display = 'none';
+      }
+  </script>
 </body>
 </html>
