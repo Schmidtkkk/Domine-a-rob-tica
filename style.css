@@ -97,3 +97,35 @@ footer {
    padding: 20px;
    margin-top: -200px; /* Ajuste conforme desejado */
 }
+.cart-menu {
+   background-color: #f4f4f4;
+   padding: 20px;
+   border: 1px solid #ccc;
+   max-width: 800px;
+}
+
+.cart-menu ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+.cart-menu ul li {
+   margin-bottom: 10px;
+}
+
+.cart-menu ul li a {
+   text-decoration: none;
+   color: #333;
+   font-size: 16px;
+}
+
+.cart-menu button {
+   background-color: #83056e;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   display: block;
+   margin-top: 20px;
+}
