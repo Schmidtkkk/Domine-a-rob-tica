@@ -10,7 +10,7 @@ header {
 nav {
     text-align: center;
     word-spacing: 30px;
-    padding: 10px;
+    padding: 10px; /* Corrigido 'Padding' para 'padding' */
     background-color: #e7d741;
 }
 
@@ -29,17 +29,16 @@ nav {
     flex: 70%;
     padding: 20px;
     background-color: #e9e0e9;
-    margin: 10px 0; /* Adicionado para espaçamento vertical */
+    margin: 10px; /* Adicionado para espaçamento */
 }
 
-.profile {
+.profile, .informatica {
     flex: 30%;
     padding: 20px;
-    text-align: right;
-    margin: 10px 0; /* Adicionado para espaçamento vertical */
+    margin: 10px; /* Adicionado para espaçamento */
 }
 
-.profile img {
+.profile img, .informatica img {
     width: 100%;
     max-width: 300px; /* Definir um máximo para o tamanho da imagem */
     display: block;
@@ -47,41 +46,18 @@ nav {
     padding: 10px;
 }
 
-.profile h1 {
-    text-align: right;
-    font-size: 36px;
-    margin: 10px 0; /* Ajustado para espaçamento */
+.profile h1, .informatica h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
 }
 
-.profile p {
-    font-size: 22px;
-    text-align: left;
+.profile p, .informatica p {
+    font-size: 18px;
+    text-align: center;
     word-wrap: break-word;
     max-width: 300px;
-    margin: 10px auto; /* Ajustado para espaçamento */
-}
-
-.informatica {
-    flex: 100%;
-    padding: 20px;
-    text-align: right;
-    margin: 10px 0; /* Adicionado para espaçamento vertical */
-}
-
-.informatica h1 {
-    font-size: 22px;
-    text-align: left;
-    word-wrap: break-word;
-    max-width: 300px;
-    margin: 10px auto; /* Ajustado para espaçamento */
-}
-
-.informatica img {
-    width: 100%;
-    max-width: 700px; /* Definir um máximo para o tamanho da imagem */
-    display: block;
-    margin: 10px auto; /* Centraliza a imagem */
-    padding: 10px;
+    margin: 10px auto;
 }
 
 /* Estilo do footer */
