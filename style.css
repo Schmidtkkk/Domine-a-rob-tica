@@ -10,7 +10,7 @@ header {
 nav {
     text-align: center;
     word-spacing: 30px;
-    padding: 10px; /* Corrigido 'Padding' para 'padding' */
+    padding: 10px;
     background-color: #e7d741;
 }
 
@@ -22,6 +22,7 @@ nav {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -10px; /* Ajuste para espaçamento */
 }
 
 .post-text-box {
@@ -30,64 +31,38 @@ nav {
     background-color: #e9e0e9;
 }
 
-.profile {
+.profile, .informatica {
     flex: 30%;
     padding: 20px;
-    text-align: right; /* Adicionado para alinhar à direita */
 }
 
-.profile img {
-    width: 300px;
+.profile img, .informatica img {
+    width: 100%;
+    max-width: 300px;
     display: block;
-    margin-left: auto; /* Mudei para auto para alinhar à direita */
-    margin-right: 30px; /* Ajustei o margin-right para espaçamento */
+    margin: 10px auto; /* Centraliza a imagem */
     padding: 10px;
 }
 
-.profile h1 {
-    text-align: right;
-    font-size: 36px;
-    margin-left: auto;
-    margin-right: 5%;
+.profile h1, .informatica h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
 }
 
-.profile p {
-    font-size: 22px;
-    text-align: left;
+.profile p, .informatica p {
+    font-size: 18px;
+    text-align: center;
     word-wrap: break-word;
-    max-width: 300px; /* Ajuste conforme desejado */
-    margin-left: auto; /* Centraliza o conteúdo */
-    margin-right: 2%;
-}
-
-.informatica {
-    flex: 30%; /* Alterado para 30% para acomodar a imagem */
-    padding: 20px;
-    text-align: right; /* Adicionado para alinhar à direita */
-}
-
-.informatica h1 {
-    font-size: 22px;
-    text-align: left;
-    word-wrap: break-word;
-    max-width: 300px; /* Ajuste conforme desejado */
-    margin-left: auto; /* Ajuste conforme desejado */
-    margin-right: 2%;
-}
-
-.informatica img {
-    width: 700px;
-    display: block;
-    margin-left: auto; /* Mudei para auto para alinhar à direita */
-    margin-right: auto; /* Ajustei para centralizar a imagem */
-    padding: 10px;
+    max-width: 300px;
+    margin: 10px auto;
 }
 
 /* Estilo do footer */
 footer {
     text-align: center;
     padding: 20px;
-    margin-top: 300px; /* Ajuste conforme desejado */
+    margin-top: 50px; /* Ajuste conforme desejado */
 }
 
 /* Estilo do botão da barra de navegação */
