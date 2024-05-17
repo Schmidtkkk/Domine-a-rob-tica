@@ -1,75 +1,99 @@
 /* Estilo do cabeçalho */
 header {
-    text-align: center;
-    color: aliceblue;
-    padding: 20px;
-    background-color: #83056e;
+   text-align: center;
+   color: aliceblue;
+   padding: 20px;
+   background-color: #83056e;
 }
 
 /* Estilo do menu de navegação */
 nav {
-    text-align: center;
-    word-spacing: 30px;
-    padding: 10px; /* Corrigido 'Padding' para 'padding' */
-    background-color: #e7d741;
+   text-align: center;
+   word-spacing: 30px;
+   padding: 10px; /* Corrigido 'Padding' para 'padding' */
+   background-color: #e7d741;
 }
 
 /* Criando o layout de duas colunas */
 * {
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px; /* Ajuste para espaçamento entre colunas */
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -10px; /* Ajuste para espaçamento entre colunas */
 }
 
 .post-text-box {
-    flex: 70%;
-    padding: 20px;
-    background-color: #e9e0e9;
-    margin: 10px; /* Adicionado para espaçamento */
+   flex: 70%;
+   padding: 20px;
+   background-color: #e9e0e9;
+   margin: 10px; /* Adicionado para espaçamento */
 }
 
 .profile, .informatica {
-    flex: 30%;
-    padding: 20px;
-    margin: 10px; /* Adicionado para espaçamento */
+   flex: 30%;
+   padding: 20px;
+   margin: 10px; /* Adicionado para espaçamento */
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start; /* Alinha os itens ao topo */
 }
 
-.profile img, .informatica img {
-    width: 100%;
-    max-width: 300px; /* Definir um máximo para o tamanho da imagem */
-    display: block;
-    margin: 10px auto; /* Centraliza a imagem */
-    padding: 10px;
+.profile .profile-content, .informatica .informatica-content {
+   order: -1; /* Definindo a ordem dos textos para aparecerem primeiro */
 }
 
-.profile h1, .informatica h1 {
-    font-size: 24px;
-    text-align: center;
-    margin: 10px 0;
+.profile .profile-img, .informatica .informatica-img {
+   order: 0; /* Definindo a ordem das imagens para aparecerem depois */
 }
 
-.profile p, .informatica p {
-    font-size: 18px;
-    text-align: center;
-    word-wrap: break-word;
-    max-width: 300px;
-    margin: 10px auto;
+.profile img {
+   width: 100%; /* Largura ocupando 100% do contêiner pai */
+   max-width: 500px; /* Largura máxima da imagem da garra robótica */
+   height: auto; /* Mantendo a proporção da imagem */
+   margin-left: 300px;
 }
 
+.informatica img {
+   width: 100%; /* Largura ocupando 100% do contêiner pai */
+   max-width: 400px; /* Largura máxima da imagem de informática e robótica */
+   height: auto; /* Mantendo a proporção da imagem */
+   margin-left: 350px;
+   position: relative;
+   top: -480px;
+}
+
+.profile h2, .informatica h2 {
+   font-size: 24px;
+   color: #83056e;
+   background-color: #e7d741;
+}
+
+.profile p {
+   font-size: 20px;
+   text-align: left;
+   word-wrap: break-word;
+   color: #333;
+   background-color: #fdf9fd;
+   line-height: 1.5;
+   margin-bottom: 20px;
+   max-width: 500px;
+}
+.informatica p{
+   font-size: 20px;
+   text-align: left;
+   word-wrap: break-word;
+   color: #333;
+   background-color: #fdf9fd;
+   line-height: 1.5;
+   margin-bottom: 20px;
+   max-width: 300px;
+}
 /* Estilo do footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px; /* Ajuste conforme desejado */
-}
-
-/* Estilo do botão da barra de navegação */
-nav a {
-    color: #610885a9;
-    text-decoration: none;
-    font-size: larger;
+   text-align: center;
+   padding: 20px;
+   margin-top: -200px; /* Ajuste conforme desejado */
 }
