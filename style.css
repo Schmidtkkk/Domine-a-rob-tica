@@ -10,11 +10,15 @@ header {
 nav {
     text-align: center;
     word-spacing: 30px;
-    padding: 10px;
+    padding: 10px; /* Corrigido 'Padding' para 'padding' */
     background-color: #e7d741;
 }
 
-/* Layout de duas colunas */
+/* Criando o layout de duas colunas */
+* {
+    box-sizing: border-box;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -29,36 +33,66 @@ nav {
 .profile {
     flex: 30%;
     padding: 20px;
-    text-align: right;
+    text-align: right; /* Adicionado para alinhar à direita */
 }
 
-.profile-img img {
+.profile img {
     width: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: 30px;
+    margin-left: auto; /* Mudei para auto para alinhar à direita */
+    margin-right: 30px; /* Ajustei o margin-right para espaçamento */
     padding: 10px;
+}
+
+.profile h1 {
+    text-align: right;
+    font-size: 36px;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.profile p {
+    font-size: 22px;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 300px; /* Ajuste conforme desejado */
+    margin-left: auto; /* Centraliza o conteúdo */
+    margin-right: 2%;
 }
 
 .informatica {
-    flex: 30%;
+    flex: 30%; /* Alterado para 30% para acomodar a imagem */
     padding: 20px;
-    text-align: right;
-    margin-top: -400px;
+    text-align: right; /* Adicionado para alinhar à direita */
 }
 
-.informatica-img img {
+.informatica h1 {
+    font-size: 22px;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 300px; /* Ajuste conforme desejado */
+    margin-left: auto; /* Ajuste conforme desejado */
+    margin-right: 2%;
+}
+
+.informatica img {
     width: 700px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /* Mudei para auto para alinhar à direita */
+    margin-right: auto; /* Ajustei para centralizar a imagem */
     padding: 10px;
-    margin-top: -300px;
 }
 
-/* Estilo do rodapé */
+/* Estilo do footer */
 footer {
     text-align: center;
     padding: 20px;
-    margin-top: 300px;
+    margin-top: 300px; /* Ajuste conforme desejado */
+}
+
+/* Estilo do botão da barra de navegação */
+nav a {
+    color: #610885a9;
+    text-decoration: none;
+    font-size: larger;
 }
